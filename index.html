@@ -16,32 +16,37 @@
     <div class="back"></div>
     <div class="registration-form">
         <header>
-            <img id="AP1" src="./AP1.png" alt="Akshar-Purshotam">
+            <img id="AP1" src="AP1.png" alt="Akshar-Purshotam">
+            <!-- <img id="bg1" src="bg1.png" alt="Akshar-Purshotam"> -->
             <h1>BAPS Registration</h1>
             <p>Fill in all informations</p>
         </header>
         <script type="text.javascript">var submitted=false</script>
         <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted){window.location='index.html';}"></iframe>
         <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe08vOFXi2VfgjX6QieOkxBFvYMMDwz2VgzvN8NN_tNOjEsLg/formResponse" method="post" target="hiddenConfirm" onsubmit="submitted=true">
-            <div class="input-section email-section">
+            <div class="input-section email-section fold">
                 <input class="email" type="text" name="entry.293997221" placeholder="ENTER NAME HERE" autocomplete="off" />
                 <div class="animated-button"><span class="icon-paper-plane"><i
                             class="fa fa-file-text-o"></i></span><span class="next-button email"><i
                             class="fa fa-arrow-up"></i></span></div>
             </div>
             <div class="input-section mobile-section folded">
-                <input class="mobile" type="tel" name="entry.2137659398" placeholder="ENTER MOBILE NUMBER HERE" />
+                <input class="mobile" type="tel" name="entry.2137659398" placeholder="ENTER MOBILE NO. HERE" />
                 <div class="animated-button"><span class="icon-lock"><i class="fa fa-mobile"></i></span><span
                         class="next-button mobile"><i class="fa fa-arrow-up"></i></span></div>
             </div>
             <div class="input-section repeat-area-section folded">
                 <input class="repeat-area" type="text" name="entry.182968612" placeholder="ENTER AREA HERE" />
                 <div class="animated-button"><span class="icon-repeat-lock"><i class="fa fa-home"></i></span><span
-                        class="next-button repeat-area"><button class="btn" type="submit"><i class="fa fa-paper-plane"></i></button></span></div>
+                        class="next-button repeat-area"><i class="fa fa-paper-plane"></i></button></span></div>
             </div>
-            <div class="success">
+            <div>
+                <button class="btn" type="submit" onclick="showDiv()">Submit</button>
+            </div>
+            <div class="success" id="success">
                 <p>SUBMITTED</p>
             </div>
+
         </form>
     </div>
     <!-- partial -->
